@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+
+}
+
+.common
+{
+ 
+    border-radius: 50% 50% 50% 50%;
+    height: 77px;
+    width: 79px;
+    margin-right: 8px;
+margin-top:10px;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: black 1px solid;
+
+    color:white;
+
+}
+.common:focus
+{
+    outline: none;
+}
+.textbox
+{
+    border: black 2px solid;
+    background-color: black;
+    color: white;
+    font-size: 92px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    font-weight: normal;
+    height: 73px;
+    width: 100%;
+    margin-inline-start: -17px;
+
+
+}
+.textbox:focus
+{
+    outline: none;
+}
+
+
+.common:active
+{
+    background-color: gray;
+}
+.orange:active{
+    background-color: white;
+    color:orange;
+}
+.ac:active
+{
+    background-color: white;
+}
+
+.merge
+{
+    height: 77px;
+    border-bottom-left-radius: 46px;
+    border-bottom-right-radius: 46px;
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
+    width: 169px;
+    
+}
+.grey
+{
+    background-color: #333;
+
+}
+.tab{
+
+    margin-top: 10px;
+    width: 100%;
+}
+.ac
+{
+    
+    color:#333;
+    background-color: darkgrey;
+   
+   
+    
+}
+
+.orange
+{
+
+    background-color:orange;
+}
+.numb
+{
+    text-align: center;
+    align-content: center;
+}

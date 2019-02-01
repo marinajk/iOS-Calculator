@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>iOS Calculator</title>
+    <script src="script.js">
+    </script>
+</head>
+<body >
+    <br>
+    <br>
+    <br><br>
+    <form name="form" >
+    <input type="text" name="t" value="0" id="t" class="textbox" >
+    <br>
+    <table class="tab">
+        <tr class="tab">
+            <td>
+                <input type="button" value="AC" name="ac" id="ac" class="ac common " >
+            </td>
+            <td>
+                <input type="button" value="+/-" class="ac common op" id="not" >
+            </td>
+            <td>
+                <input type="button" value="%" class="ac common op" id="percent">
+            </td>
+            <td>
+                <input type="button" value="/" class="orange common op" id="div">
+            </td>
+        </tr>
+        <tr class="tab">
+                <td>
+                        <input type="button" value="7" class="grey common numb" id="seven" >
+                </td>
+                <td>
+                        <input type="button" value="8" class="grey common numb" id="eight">
+                </td>
+                <td>
+                        <input type="button" value="9" class="grey common numb" id="nine">
+                </td>
+                <td>
+                        <input type="button" value="*" class="orange common op" id="mul">
+                </td>
+
+        </tr>
+        <tr class="tab">
+                <td>
+                        <input type="button" value="4" class="grey common numb" id="four">
+                </td>
+                <td>
+                        <input type="button" value="5" class="grey common numb" id="five">
+                </td>
+                <td>
+                        <input type="button" value="6" class="grey common numb " id="six">
+                </td>
+                <td>
+                        <input type="button" value="-" class="orange common op" id="sub">
+                </td>
+
+        </tr>
+        <tr class="tab">
+                <td>
+                        <input type="button" value="1" class="grey common numb" id="one">
+                </td>
+                <td>
+                        <input type="button" value="2" class="grey common numb" id="two">
+                </td>
+                <td>
+                        <input type="button" value="3" class="grey common numb" id="three">
+                </td>
+                <td>
+                        <input type="button" value="+" class="orange common op" id="add">
+                </td>
+
+        </tr>
+        <tr class="tab">
+                <td colspan="2">
+         <input type="button" value="0" class="grey common merge numb" id="zero">
+                
+                       
+                </td>
+                <td>
+                        <input type="button" value="." class="grey common" id="decimal">           
+                </td>
+                <td>
+                        <input type="button" value="=" class="orange common" onclick="calc()">
+                </td>
+
+        </tr>
+
+    </table>
+    </form>
+</body>
+</html>
