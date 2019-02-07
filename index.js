@@ -104,13 +104,7 @@ function clear1()
     secondoperand=undefined;
     evals=[];
 }
-/*function calc7()
-{
-    if(t.value=='0')
-    t.value=" ";
-    t.value+=sevenn.value;
-    
-}*/
+
 var deci=document.getElementById("decimal");
 deci.onclick=() =>
 {
