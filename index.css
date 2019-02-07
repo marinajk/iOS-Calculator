@@ -1,11 +1,8 @@
 body{
     background-color: black;
-
 }
-
 .common
 {
- 
     border-radius: 50% 50% 50% 50%;
     height: 77px;
     width: 79px;
@@ -14,9 +11,7 @@ margin-top:10px;
     font-size: 33px;
     font-family: Arial, Helvetica, sans-serif;
     border: black 1px solid;
-
     color:white;
-
 }
 .common:focus
 {
@@ -24,6 +19,7 @@ margin-top:10px;
 }
 .textbox
 {
+
     border: black 2px solid;
     background-color: black;
     color: white;
@@ -34,15 +30,11 @@ margin-top:10px;
     height: 73px;
     width: 100%;
     margin-inline-start: -17px;
-
-
 }
 .textbox:focus
 {
     outline: none;
 }
-
-
 .common:active
 {
     background-color: gray;
@@ -55,7 +47,6 @@ margin-top:10px;
 {
     background-color: white;
 }
-
 .merge
 {
     height: 77px;
@@ -63,36 +54,22 @@ margin-top:10px;
     border-bottom-right-radius: 46px;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
-    width: 169px;
-    
+    width: 169px;   
 }
 .grey
 {
     background-color: #333;
-
 }
 .tab{
-
     margin-top: 10px;
     width: 100%;
 }
 .ac
 {
-    
     color:#333;
     background-color: darkgrey;
-   
-   
-    
 }
-
 .orange
 {
-
     background-color:orange;
-}
-.numb
-{
-    text-align: center;
-    align-content: center;
 }

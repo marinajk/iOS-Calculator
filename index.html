@@ -4,94 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <title>iOS Calculator</title>
-    <script src="script.js">
-    </script>
+    
 </head>
-<body >
+<body class="calculator"  >
     <br>
     <br>
-    <br><br>
-    <form name="form" >
-    <input type="text" name="t" value="0" id="t" class="textbox" >
     <br>
-    <table class="tab">
-        <tr class="tab">
-            <td>
-                <input type="button" value="AC" name="ac" id="ac" class="ac common " >
-            </td>
-            <td>
-                <input type="button" value="+/-" class="ac common op" id="not" >
-            </td>
-            <td>
-                <input type="button" value="%" class="ac common op" id="percent">
-            </td>
-            <td>
-                <input type="button" value="/" class="orange common op" id="div">
-            </td>
+    <br>
+   
+   
+    <div class="textbox" id="text" >0</div>
+    <br>
+    <table class="tab keys">
+        <tr class="tab"> 
+                <td>
+                        <button  type="button"  id="clr" class="ac common clear" onclick="clear1()">AC</button>
+                </td>
+                <td>
+                        <button type="button" id="+/-" class="ac common operators" id="not" >+/-</button>
+                </td>
+                <td>
+                        <button type="button" id="%" class="ac common operators" id="percent">%</button>
+                </td>
+                <td>
+                        <button type="button" id="/" class="orange common operators" id="div">/</button>
+                </td>
         </tr>
         <tr class="tab">
                 <td>
-                        <input type="button" value="7" class="grey common numb" id="seven" >
+                        <button type="button" value="7" class="grey common numbers" id="seven" >7</button>
                 </td>
                 <td>
-                        <input type="button" value="8" class="grey common numb" id="eight">
+                        <button type="button" value="8" class="grey common numbers" id="eight">8</button>
                 </td>
                 <td>
-                        <input type="button" value="9" class="grey common numb" id="nine">
+                        <button type="button" value="9" class="grey common numbers" id="nine" >9</button>
                 </td>
                 <td>
-                        <input type="button" value="*" class="orange common op" id="mul">
+                        <button type="button" id="*" class="orange common operators" id="mul">*</button>
+
                 </td>
 
         </tr>
         <tr class="tab">
                 <td>
-                        <input type="button" value="4" class="grey common numb" id="four">
+                        <button type="button" value="4" class="grey common numbers" id="four" >4</button>
                 </td>
                 <td>
-                        <input type="button" value="5" class="grey common numb" id="five">
+                        <button type="button" value="5" class="grey common numbers" id="five" >5</button>
                 </td>
                 <td>
-                        <input type="button" value="6" class="grey common numb " id="six">
+                        <button type="button" value="6" class="grey common numbers" id="six" >6</button>
                 </td>
                 <td>
-                        <input type="button" value="-" class="orange common op" id="sub">
+                        <button type="button" id="-"  class="orange common operators" id="sub">-</button>
                 </td>
-
         </tr>
         <tr class="tab">
                 <td>
-                        <input type="button" value="1" class="grey common numb" id="one">
+                        <button type="button" value="1" class="grey common numbers" id="one" >1</button>
+
                 </td>
                 <td>
-                        <input type="button" value="2" class="grey common numb" id="two">
+                        <button type="button" value="2" class="grey common numbers" id="two" >2</button>
                 </td>
                 <td>
-                        <input type="button" value="3" class="grey common numb" id="three">
+                        <button type="button" value="3" class="grey common numbers" id="three" >3</button>
                 </td>
                 <td>
-                        <input type="button" value="+" class="orange common op" id="add">
+                        <button type="button"  id="+" class="orange common operators" id="add">+</button>
                 </td>
 
         </tr>
         <tr class="tab">
                 <td colspan="2">
-         <input type="button" value="0" class="grey common merge numb" id="zero">
+         <button type="button" value="0" class="grey common merge numbers" id="zero">0</button>
                 
                        
                 </td>
                 <td>
-                        <input type="button" value="." class="grey common" id="decimal">           
+                        <button type="button" value="." class="grey common" id="decimal">.</button>          
                 </td>
                 <td>
-                        <input type="button" value="=" class="orange common" onclick="calc()">
+                        <button type="button" id="=" class="orange common operators" >=</button>
                 </td>
 
         </tr>
 
     </table>
     </form>
+
+    <script src="index.js"></script>
 </body>
 </html>
