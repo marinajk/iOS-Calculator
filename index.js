@@ -16,10 +16,10 @@ var perform=(clickObj)=>
     switch(op)
     {
         case '+':
-        
-            secondoperand=txt;
+       
+        secondoperand=txt;
             txt=txt;
-            
+        
             t.innerText=txt;
             evals.push(secondoperand);
             evals.push('+');
@@ -126,3 +126,4 @@ deci.onclick=() =>
     t.innerText= txt;
 
 }
+
