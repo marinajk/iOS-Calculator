@@ -18,8 +18,8 @@ var perform=(clickObj)=>
         case '+':
         
             secondoperand=txt;
-            txt=Math.abs(txt);
             txt=txt;
+            
             t.innerText=txt;
             evals.push(secondoperand);
             evals.push('+');
@@ -27,7 +27,7 @@ var perform=(clickObj)=>
             break;
         case '-':
             secondoperand=txt;
-            txt=Math.abs(txt);           
+            txt=txt;         
             t.innerText=txt;
             evals.push(secondoperand);
             evals.push('-');
@@ -36,8 +36,8 @@ var perform=(clickObj)=>
         case '*':
             
             secondoperand=txt;
-            txt=Math.abs(txt);
             txt=txt;
+       
             t.innerText=txt;
             evals.push(secondoperand);
             evals.push('*');
@@ -45,8 +45,8 @@ var perform=(clickObj)=>
             break;
         case '/':
             secondoperand=txt;
-            txt=Math.abs(txt);
             txt=txt;
+        
             t.innerText=txt;
             evals.push(secondoperand);
             evals.push('/');
@@ -54,7 +54,7 @@ var perform=(clickObj)=>
             break;
         case '%': 
             txt=txt/100;
-            txt=Math.abs(txt);
+            txt=txt;
             t.innerText=txt;
             break;
         case '+/-':
@@ -62,7 +62,7 @@ var perform=(clickObj)=>
             txt=Math.abs(txt);
             else
             txt=eval(-1*txt);
-            txt=Math.abs(txt);
+
             t.innerText=txt;
             break;
         case '=':
@@ -80,16 +80,24 @@ var perform=(clickObj)=>
 
 var updatetextbox= (clickObj)=>
 {
+    
    
-    var btnText=clickObj.target.innerText;
- if(txt=='0')
- txt=" ";
-    
+    var btnText=clickObj.target.innerText;                 
+    if(txt=='0')
+    txt=" "; 
+    if(!t.innerText.indexOf(-1)=='0'&& t.innerText.indexOf(0)=='0')
+    {
+    if(btnText!=0)
+        txt += btnText;
+    else 
+        txt='0';
+    }
+    else
     txt += btnText;
-    t.innerText= txt;
-    
+
+    t.innerText= txt; 
 }
-for (let i =0;i<operate.length;i++)
+    for (let i =0;i<operate.length;i++)
 {
     operate[i].addEventListener("click",perform,false);
 }
